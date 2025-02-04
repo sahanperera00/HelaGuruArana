@@ -20,11 +20,11 @@ jobs:
         run: npm run build
 
       - name: Check if Build Directory Exists
-        run: ls -la build || echo "Build directory not found!"
+        run: ls -la dist || echo "Build directory not found!"
 
       - name: Deploy to GitHub Pages
         if: success()
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: build
+          folder: dist  # Change from 'build' to 'dist'
