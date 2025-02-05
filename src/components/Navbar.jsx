@@ -1,8 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { cn } from "../utils/classNames.js";
+import { navItems } from "../routes.js";
 
 export default function Navbar() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <div className="bg-white rounded-full shadow-sm py-3 flex items-center justify-between">
@@ -11,30 +14,18 @@ export default function Navbar() {
         <p className="text-base font-medium uppercase">Hela Guru Arana</p>
       </div>
       <div className="w-[50%] hidden lg:grid grid-cols-4 space-x-10">
-        <p
-          className="hover:cursor-pointer hover:font-semibold transition-all duration-100"
-          onClick={() => navigate("/")}
-        >
-          Home
-        </p>
-        <p
-          className="hover:cursor-pointer hover:font-semibold transition-all duration-100"
-          onClick={() => navigate("/about")}
-        >
-          About Us
-        </p>
-        <p
-          className="hover:cursor-pointer hover:font-semibold transition-all duration-100"
-          onClick={() => navigate("/services")}
-        >
-          Services
-        </p>
-        <p
-          className="hover:cursor-pointer hover:font-semibold transition-all duration-100"
-          onClick={() => navigate("/contact")}
-        >
-          Contact Us
-        </p>
+        {navItems.map(({ label, path }) => (
+          <p
+            key={path}
+            className={cn(
+              "hover:cursor-pointer transition-all duration-100",
+              location.pathname === path ? "font-bold" : "hover:font-semibold"
+            )}
+            onClick={() => navigate(path)}
+          >
+            {label}
+          </p>
+        ))}
       </div>
     </div>
   );

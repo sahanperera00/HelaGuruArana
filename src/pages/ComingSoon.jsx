@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 
 export default function ComingSoon() {
   return (
-    <div className="w-screen h-screen flex justify-center py-8 no-scrollbar">
+    <div className="w-screen h-screen flex justify-center py-8">
       <div className="relative max-w-[80%] w-full">
         <Navbar />
         <div className="flex flex-col-reverse lg:flex-row items-center justify-center w-full pt-30">
