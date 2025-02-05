@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ComingSoon from "./pages/ComingSoon";
-import "./app.css";
+import "./App.css";
 
 export default function App() {
   return (
