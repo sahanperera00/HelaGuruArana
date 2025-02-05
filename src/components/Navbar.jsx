@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <div className="bg-white rounded-full shadow-sm py-3 flex items-center justify-between">
       <div className="flex items-center space-x-2 mx-auto lg:ml-10">
-        <img className="w-[49px]" src="src\assets\raku.png" alt="raku" />
+        <img className="w-[49px]" src="/raku.png" alt="raku" />
         <p className="text-base font-medium uppercase">Hela Guru Arana</p>
       </div>
       <div className="w-[50%] hidden lg:grid grid-cols-4 space-x-10">

@@ -16,7 +16,7 @@ export default function ComingSoon() {
           </div>
           <img
             className="w-60 lg:w-100 opacity-100"
-            src="src/assets/raku.png"
+            src="/raku.png"
             alt="raku"
           />
         </div>
