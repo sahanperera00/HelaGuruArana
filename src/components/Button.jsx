@@ -12,7 +12,7 @@ export default function Button({
     "px-6 py-3 rounded-full font-medium transition-all duration-200 cursor-pointer";
   const variants = {
     primary: "bg-[#374836] text-white hover:bg-[#71946f]",
-    secondary: "bg-gray-600 text-white hover:bg-gray-700",
+    secondary: "bg-white text-black hover:bg-[#374836] hover:text-white",
     disabled: "bg-gray-300 text-gray-500 cursor-not-allowed",
     transparent: "bg-transparent text-black hover:bg-gray-100",
     outlined: "border border-gray-600 text-gray-600 hover:bg-gray-100",
