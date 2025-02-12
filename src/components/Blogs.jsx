@@ -30,7 +30,12 @@ export default function Blogs() {
             Blogs
           </p>
         </div>
-        <Carousel responsive={responsive} className="" itemClass="px-5 py-10">
+        <Carousel
+          responsive={responsive}
+          className=""
+          itemClass="px-5 py-10"
+          infinite
+        >
           {/* Article 1 */}
           <div className="flex flex-col space-y-3 bg-white rounded-3xl overflow-hidden shadow-lg">
             <img
@@ -39,9 +44,7 @@ export default function Blogs() {
               className="w-full h-[150px] object-cover"
             />
             <div className="space-y-3 bg-white px-6 pb-10">
-              <p className="w-fit pb- text-xl font-semibold">
-                Blog Title #1
-              </p>
+              <p className="w-fit pb- text-xl font-semibold">Blog Title #1</p>
               <p className="text-sm text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum tortor augue, vestibulum non felis sed.
@@ -57,9 +60,7 @@ export default function Blogs() {
               className="w-full h-[150px] object-cover"
             />
             <div className="space-y-3 bg-white px-6 pb-10">
-              <p className="w-fit text-xl font-semibold">
-                Blog Title #2
-              </p>
+              <p className="w-fit text-xl font-semibold">Blog Title #2</p>
               <p className="text-sm text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum tortor augue, vestibulum non felis sed.
@@ -75,9 +76,7 @@ export default function Blogs() {
               className="w-full h-[150px] object-cover"
             />
             <div className="space-y-3 bg-white px-6 pb-10">
-              <p className="w-fit text-xl font-semibold">
-                Blog Title #3
-              </p>
+              <p className="w-fit text-xl font-semibold">Blog Title #3</p>
               <p className="text-sm text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum tortor augue, vestibulum non felis sed.
@@ -93,9 +92,7 @@ export default function Blogs() {
               className="w-full h-[150px] object-cover"
             />
             <div className="space-y-3 bg-white px-6 pb-10">
-              <p className="w-fit text-xl font-semibold">
-                Blog Title #4
-              </p>
+              <p className="w-fit text-xl font-semibold">Blog Title #4</p>
               <p className="text-sm text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum tortor augue, vestibulum non felis sed.
@@ -111,9 +108,7 @@ export default function Blogs() {
               className="w-full h-[150px] object-cover"
             />
             <div className="space-y-3 bg-white px-6 pb-10">
-              <p className="w-fit text-xl font-semibold">
-                Blog Title #5
-              </p>
+              <p className="w-fit text-xl font-semibold">Blog Title #5</p>
               <p className="text-sm text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum tortor augue, vestibulum non felis sed.
