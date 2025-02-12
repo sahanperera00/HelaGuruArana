@@ -101,7 +101,7 @@ export default function Home() {
                 <div className="absolute -inset-10 bg-gradient-to-t from-[#000000B5] to-transparent"></div>
                 <div className="relative z-10 text-center lg:text-start space-y-3">
                   <p className="text-2xl lg:text-2xl font-semibold text-white">
-                    Training Program and Retreats
+                    Training Programs and Retreats
                   </p>
                   <p className="text-white lg:text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -115,9 +115,9 @@ export default function Home() {
       </div>
 
       {/* Section 4 */}
-      <div className="w-screen h-[60vh] flex justify-center py-8 bg-[url('/image2.jpg')] bg-cover bg-center">
+      <div className="w-screen flex justify-center py-8 bg-[url('/image2.jpg')] bg-cover bg-center py-20">
         <div className="relative max-w-[70%] w-full flex flex-col items-center justify-center space-y-10">
-          <p className="text-6xl lg:text-8xl font-semibold text-white text-center">
+          <p className="text-3xl lg:text-4xl font-semibold text-white text-center">
             Sample Quote
           </p>
           <p className="lg:w-[600px] text-white text-center">
@@ -127,6 +127,7 @@ export default function Home() {
 
           <Button
             variant="secondary"
+            className="text-sm"
             text={"Make an Appointment"}
             onClick={() => {}}
           />
